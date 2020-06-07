@@ -1,3 +1,5 @@
+このリポジトリは[image-scrubber](https://github.com/everestpipkin/image-scrubber)を日本語に翻訳したものです。
+
 # image-scrubber
 This is a tool for anonymizing photographs taken at protests. 
 
