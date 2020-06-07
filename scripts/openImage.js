@@ -124,7 +124,7 @@ function onFileChange(e) {
 
                     var btn = document.createElement('BUTTON');
                     btn.id = 'continueButtonExif';
-                    btn.innerHTML = 'Scrub Exif Data';
+                    btn.innerHTML = 'Exifデータを削除';
                     btn.onclick = scrubData;
                     exifInformationHolder.appendChild(btn);
                 }

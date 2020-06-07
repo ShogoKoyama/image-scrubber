@@ -125,7 +125,7 @@ function saveImage() {
 
 function scrubData() {
     document.getElementById('exifInformationHolder').style.display = 'none';
-    alert('EXIF data removed: you may now save the image');
+    alert('EXIFデータを削除しました。画像を保存できます。');
 }
 
 function goToBlur() {

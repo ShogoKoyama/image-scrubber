@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,7 +48,7 @@
         <div id="topBar">
             <div class="topBarDiv">
                 <label for="file-input" class="customFileOpen controlButton"
-                    >Open&nbsp;Image&nbsp;📂</label
+                    >写真を開く&nbsp;📂</label
                 >
                 <input id="file-input" type="file" />
             </div>
@@ -57,11 +57,11 @@
                 id="saveButton"
                 onclick="saveImage(this)"
                 class="topBarDiv controlButton"
-                >Save&nbsp;Image&nbsp;💾</a
+                >写真を保存&nbsp;💾</a
             >
 
             <div id="rotate" class="topBarDiv controlButton">
-                Rotate&nbsp;Image&nbsp;⤾
+                写真を回転&nbsp;⤾
             </div>
 
             <div id="paintBlur" class="topBarDiv" class="customFileOpen">
@@ -72,7 +72,7 @@
                         name="paintingAction"
                         value="paint"
                     />
-                    <label for="Paint">Paint</label><br />
+                    <label for="Paint">ペイント</label><br />
                     <input
                         type="radio"
                         id="Blur"
@@ -80,20 +80,20 @@
                         value="blur"
                         checked
                     />
-                    <label for="Blur">Blur&nbsp;</label><br />
+                    <label for="Blur">ぼかし&nbsp;</label><br />
                     <input
                         type="radio"
                         id="Undo"
                         name="paintingAction"
                         value="undo"
                     />
-                    <label for="Undo">Undo&nbsp;</label>
+                    <label for="Undo">元に戻す&nbsp;</label>
                 </form>
             </div>
 
             <div id="brushSizeDiv" class="topBarDiv">
                 <center>
-                    Brush&nbsp;Size<br />
+                    ブラシのサイズ<br />
                     <input
                         type="range"
                         min="10"
@@ -107,7 +107,7 @@
 
             <div id="blurAmountDiv" class="topBarDiv">
                 <center>
-                    Blur&nbsp;Radius<br />
+                    ぼかしの範囲<br />
                     <input
                         type="range"
                         min="40"
@@ -126,19 +126,24 @@
             <pre>
     <center><b>Image Scrubber</b></center>
 
-This is a tool for anonymizing photographs taken at protests.
+これは写真を匿名化するためのツールです。
 
-It will remove identifying metadata (<a href="https://en.wikipedia.org/wiki/Exif">Exif data</a>) from photographs, and also allow you to selectively blur parts of the image to cover faces and other identifiable information.
+写真から識別メタデータ (<a href="https://ja.wikipedia.org/wiki/Exif">Exifデータ</a>) や顔などの画像の識別可能な場所にぼかしを入れたり塗りつぶしたりできます。
 
-Click or drag onto the open button to open a photograph. The program will display the data it is removing.
+写真を開くには写真を開くボタンをクリックして選択するか写真をボタンにドラッグしてください。
+プログラムは削除する情報を表示します。
 
-Click okay, and you can then save the scrubbed image by hitting save or right clicking on it and saving it. Maximum size is 2500x2500 pixels - larger images will be scaled down.
+[OK]をクリックした後Save Imageボタンをクリックするか写真を右クリックから保存することでExifデータが削除された画像をダウンロードすることができます。
+最大サイズは2500x2500ピクセルです。大きい画像は縮小されます。
 
-You can select between painting over the image or blurring it out. Dragging on the image will paint on or blur it. You can change your brush size via the slider. The blur function runs on top of shuffled, noisy, upscaled pixels and is fairly secure but sensitive information should be covered with the paint tool.
+画像にペイント・ぼかしを入れることができます。
+上部のメニューでぼかしを入れるかペイントをするかを選択し、画像上をドラッグすることでペイント・ぼかしを入れることができます。
+ぼかし機能はランダムでノイズの多い拡大されたピクセルで実行され安全ですが、機密情報などはペイントツールを使用してください。
 
-This tool works offline: on a phone you can load the page or add it to the homescreen, then turn on airplane mode (or turn off wifi/data) before opening any pictures. On a computer, <a href="https://github.com/everestpipkin/image-scrubber/archive/master.zip">download</a> the zipped code, open the folder, and open index.html in a browser with the internet turned off.
+このツールはオフラインでも機能します。端末でページをロード/ホーム画面に追加すると写真を開く前に機内モードをON(WiFi/データ通信をOFF)にできます。
+PCでこのリポジトリをダウンロードしフォルダーを開けばオフラインでもindex.htmlを開くことができます。
 
-<strong>All processing happens directly in the browser- no information is stored or sent anywhere.</strong>
+<strong>全ての処理は直接ブラウザで行われ、写真の情報はどこにも保存または送信されません</strong>
 
 
 Bug reports or questions to: everest.pipkin@gmail.com
