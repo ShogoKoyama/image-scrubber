@@ -106,12 +106,12 @@ function onFileChange(e) {
             if (exifData) {
                 if (exifData.toString() == '{}') {
                     exifInformationHolder.innerHTML =
-                        "<center>No EXIF data found in image '" +
+                        "<center>画像からExifデータを見つけられませんでした。 '" +
                         file.name +
-                        "'.<br><br></center>";
+                        "'<br><br></center>";
                     var btn = document.createElement('BUTTON');
                     btn.id = 'continueButton';
-                    btn.innerHTML = 'Continue to edit image';
+                    btn.innerHTML = '画像の編集に進む';
                     btn.onclick = goToBlur;
                     exifInformationHolder.appendChild(btn);
                 } else {
