@@ -111,7 +111,7 @@ body:not(.dragging) #drop-zone {
 
     #imageCanvas {
         position: absolute;
-        top: 58%;
+        top: 60%;
         max-height: 75%;
     }
 
@@ -201,7 +201,7 @@ input[type='file'] {
 
 /* The slider itself */
 .slider {
-    width: 95%; /* Full-width */
+    width: 90%;
 }
 
 pre {

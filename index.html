@@ -90,7 +90,20 @@
                     <label for="Undo">元に戻す&nbsp;</label>
                 </form>
             </div>
-
+            <div id="brushType" class="topBarDiv">
+                <form id="brushForm">
+                     <input type="radio"
+                            id="Area"
+                            name="useBrush"
+                            value="area">
+                     <label for="Area">Rectangle</label><br>
+                     <input type="radio"
+                            id="Round"
+                            name="useBrush"
+                            value="round" checked>
+                     <label for="Round">Brush&nbsp;</label><br>
+                </form>
+            </div>
             <div id="brushSizeDiv" class="topBarDiv">
                 <center>
                     ブラシのサイズ<br />
@@ -102,12 +115,7 @@
                         class="slider"
                         id="brushSizeSlider"
                     />
-                </center>
-            </div>
-
-            <div id="blurAmountDiv" class="topBarDiv">
-                <center>
-                    ぼかしの範囲<br />
+                     Blur&nbsp;Radius<br />
                     <input
                         type="range"
                         min="40"
@@ -118,6 +126,7 @@
                     />
                 </center>
             </div>
+
         </div>
 
         <button id="about">About</button>
